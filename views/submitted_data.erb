@@ -1,0 +1,11 @@
+<h1>Form Submitted!</h1>
+<p><em>Thanks for submitting your data on <%= timestamp.strftime("%A, %d %b %Y %l:%M %p") %></em></p>
+
+<p>The submitted form was</p>
+
+<% data.each do |key, value| %>
+  <dl>
+    <dt><%= key %></dt>
+    <dd><%= value %></dd>
+  </dl>
+<% end %>
